@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click On Mind Academy | A Way of Success</title>
+<meta name="description" content="Click On Mind Academy, Sirsa - प्रतियोगी परीक्षाओं एवं प्रोफेशनल स्किल्स के लिए प्रशिक्षण संस्थान।">
+<style>
+:root{
+  --red:#e5232b; --blue:#102653; --yellow:#ffd51c; --white:#fff;
+  --light:#f5f7fb; --text:#182033; --green:#176b42;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.topbar{background:var(--blue);color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:14px}
+nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 3px 18px #0001;display:flex;align-items:center;justify-content:space-between;padding:13px 5%}
+.logo{font-weight:900;font-size:25px;color:var(--red);line-height:1.05}
+.logo span{display:block;color:var(--blue);font-size:14px;letter-spacing:1px}
+.menu{display:flex;align-items:center;gap:24px;font-weight:700}
+.menu a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 20px;border-radius:10px;font-weight:800;border:0;cursor:pointer}
+.btn.yellow{background:var(--yellow);color:var(--blue)}
+.hero{min-height:620px;display:flex;align-items:center;padding:60px 5%;background:
+linear-gradient(90deg,rgba(8,25,60,.92) 0%,rgba(8,25,60,.72) 48%,rgba(8,25,60,.2) 100%),
+url("academy-hero.png") center/cover no-repeat;color:#fff}
+.hero-content{max-width:720px}
+.badge{display:inline-block;background:var(--yellow);color:var(--blue);padding:7px 14px;border-radius:30px;font-weight:900;margin-bottom:15px}
+h1{font-size:clamp(36px,5vw,62px);line-height:1.08;margin:8px 0 18px}
+h1 span{color:var(--yellow)}
+.hero p{font-size:20px;max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+section{padding:75px 5%}
+.section-title{text-align:center;max-width:800px;margin:0 auto 40px}
+.section-title h2{font-size:38px;color:var(--blue);margin:0}
+.section-title h2 span{color:var(--red)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1200px;margin:auto}
+.card{background:#fff;border-radius:16px;padding:25px;box-shadow:0 8px 30px #10265312;border-top:5px solid var(--red);transition:.25s}
+.card:hover{transform:translateY(-5px)}
+.card h3{color:var(--blue);margin-top:5px}
+.duration{display:inline-block;background:#fff4a8;color:#654f00;padding:4px 9px;border-radius:20px;font-size:13px;font-weight:800}
+.about{background:#fff}
+.about-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{width:100%;border-radius:20px;box-shadow:0 15px 40px #0002}
+.points{padding:0;list-style:none}
+.points li{margin:13px 0;padding:13px 15px;background:#f4f6fb;border-left:5px solid var(--yellow);border-radius:8px}
+.cert{background:linear-gradient(135deg,var(--blue),#172e67);color:#fff}
+.cert .section-title h2{color:#fff}
+.cert-card{background:#fff;color:var(--text);border-top-color:var(--yellow)}
+.gallery{background:#fff}
+.gallery-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gallery-grid figure{margin:0;background:#f6f7fa;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #0001}
+.gallery-grid img{width:100%;height:330px;object-fit:cover;display:block}
+.gallery-grid figcaption{padding:12px 16px;font-weight:800;color:var(--blue)}
+.contact-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-box,.form-box{background:#fff;padding:30px;border-radius:18px;box-shadow:0 8px 30px #0001}
+.contact-box h3,.form-box h3{color:var(--blue);font-size:25px}
+.contact-item{margin:18px 0;padding:14px;border-radius:10px;background:#f5f7fb}
+form{display:grid;gap:13px}
+input,select,textarea{width:100%;padding:14px;border:1px solid #d5d9e3;border-radius:9px;font:inherit}
+textarea{min-height:100px;resize:vertical}
+footer{background:#0a1735;color:#fff;padding:35px 5%;text-align:center}
+.footer-title{font-size:25px;font-weight:900;color:var(--yellow)}
+.mobile-btn{display:none}
+@media(max-width:850px){
+ .menu{display:none}.mobile-btn{display:block}.topbar{justify-content:center}
+ .hero{min-height:560px;padding-top:45px}
+ .about-grid,.contact-grid{grid-template-columns:1fr}
+ .gallery-grid{grid-template-columns:1fr}
+ .gallery-grid img{height:280px}
+ section{padding:55px 5%}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div>📞 70827-91597 &nbsp; | &nbsp; 70827-91598</div>
+  <div>📍 Sirsa, Haryana</div>
+</div>
+
+<nav>
+  <a href="#home" class="logo">Click On Mind Academy<span>A Way of Success</span></a>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#certification">Skill Certification</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a class="btn" href="#enquiry">Apply / Enquire Now</a>
+  </div>
+  <a class="btn mobile-btn" href="#enquiry">Enquire</a>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="badge">CLICK ON MIND ACADEMY • SIRSA</div>
+    <h1>सरकारी नौकरियों एवं <span>प्रोफेशनल स्किल्स</span> के लिए विश्वसनीय संस्थान</h1>
+    <p>Delhi / Kota / Chandigarh की Top Faculty के साथ अपना उज्ज्वल भविष्य बनाएं। प्रतियोगी परीक्षाओं, कंप्यूटर एवं कौशल विकास पाठ्यक्रमों के लिए प्रशिक्षण।</p>
+    <div class="actions">
+      <a class="btn" href="#courses">कोर्स देखें</a>
+      <a class="btn yellow" href="https://wa.me/917082791597?text=नमस्ते%20Click%20On%20Mind%20Academy,%20मुझे%20कोर्स%20की%20जानकारी%20चाहिए।" target="_blank">WhatsApp करें</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-title" style="text-align:left;margin:0 0 20px">
+        <h2>हमारे <span>बारे में</span></h2>
+      </div>
+      <p>Click On Mind Academy (A Way of Success) सिरसा में प्रतियोगी परीक्षाओं तथा प्रोफेशनल एवं स्किल डेवलपमेंट पाठ्यक्रमों के लिए प्रशिक्षण प्रदान करने वाला संस्थान है।</p>
+      <ul class="points">
+        <li>🎯 प्रतियोगी परीक्षा एवं गणित-रीजनिंग की विशेष कक्षाएँ</li>
+        <li>💻 कंप्यूटर एवं व्यावसायिक कौशल प्रशिक्षण</li>
+        <li>🏆 Skill India / NSDC / NSQF से संबंधित पाठ्यक्रमों में मार्गदर्शन</li>
+        <li>🖥️ कंप्यूटर लैब सुविधा</li>
+      </ul>
+    </div>
+    <img src="academy-classroom.png" alt="Click On Mind Academy Computer Lab">
+  </div>
+</section>
+
+<section id="courses">
+  <div class="section-title">
+    <h2>हमारे <span>पाठ्यक्रम</span></h2>
+    <p>प्रोफेशनल एवं स्किल डेवलपमेंट के लिए प्रमुख पाठ्यक्रम</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h3>💻 DCA</h3><span class="duration">6 माह / 8 माह / 1 वर्ष</span><p>Diploma in Computer Applications.</p></div>
+    <div class="card"><h3>📊 Special Tally GST</h3><p>Tally एवं GST से संबंधित व्यावहारिक प्रशिक्षण।</p></div>
+    <div class="card"><h3>👩‍🏫 NTT</h3><span class="duration">2 वर्ष</span><p>Nursery Teacher Training.</p></div>
+    <div class="card"><h3>🧒 ECCE</h3><span class="duration">1 वर्ष</span><p>Early Childhood Care & Education.</p></div>
+    <div class="card"><h3>🧘 Yoga Teacher Training</h3><p>योग शिक्षक प्रशिक्षण पाठ्यक्रम।</p></div>
+    <div class="card"><h3>🚒 Fireman Training</h3><p>फायरमैन प्रशिक्षण पाठ्यक्रम।</p></div>
+    <div class="card"><h3>📚 Librarian</h3><p>लाइब्रेरी एवं पुस्तकालय प्रबंधन से संबंधित प्रशिक्षण।</p></div>
+    <div class="card"><h3>🎓 B.Lib.</h3><p>Bachelor of Library Science.</p></div>
+  </div>
+</section>
+
+<section id="certification" class="cert">
+  <div class="section-title">
+    <h2>Skill <span>Certification</span></h2>
+    <p>कौशल विकास एवं प्रमाणन से संबंधित मार्गदर्शन</p>
+  </div>
+  <div class="cards">
+    <div class="card cert-card"><h3>Skill India</h3><p>Skill India से संबंधित पाठ्यक्रम एवं प्रमाणन मार्गदर्शन।</p></div>
+    <div class="card cert-card"><h3>NSDC</h3><p>National Skill Development Corporation से संबंधित पाठ्यक्रम।</p></div>
+    <div class="card cert-card"><h3>NSQF</h3><p>National Skills Qualifications Framework से संबंधित प्रशिक्षण।</p></div>
+    <div class="card cert-card"><h3>HKRN</h3><p>Haryana Kaushal Rozgar Nigam से संबंधित कौशल पाठ्यक्रमों की जानकारी।</p></div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="section-title">
+    <h2>Academy <span>Gallery</span></h2>
+    <p>Click On Mind Academy के प्रशिक्षण वातावरण की झलक</p>
+  </div>
+  <div class="gallery-grid">
+    <figure><img src="academy-hero.png" alt="Academy computer lab"><figcaption>कंप्यूटर लैब एवं प्रशिक्षण वातावरण</figcaption></figure>
+    <figure><img src="academy-welcome.jpeg" alt="Academy welcome logo"><figcaption>Click On Mind Academy Welcome</figcaption></figure>
+    <figure><img src="academy-corridor.jpeg" alt="Academy corridor"><figcaption>Academy Training Area</figcaption></figure>
+    <figure><img src="academy-classroom.png" alt="Academy classroom"><figcaption>कक्षा एवं कंप्यूटर प्रशिक्षण</figcaption></figure>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>संपर्क <span>करें</span></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-box">
+      <h3>Click On Mind Academy</h3>
+      <div class="contact-item">📍 <b>नई लोकेशन:</b><br>2, opposite Jaat Dharmashala, Sirsa, Haryana 125055</div>
+      <div class="contact-item">📞 <b>70827-91597</b><br><b>70827-91598</b></div>
+      <div class="actions">
+        <a class="btn" href="tel:+917082791597">📞 Call Us</a>
+        <a class="btn yellow" href="https://wa.me/917082791597" target="_blank">💬 WhatsApp Us</a>
+        <a class="btn" href="https://maps.app.goo.gl/nhbTPDAUqHwq6Z2n7" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="form-box" id="enquiry">
+      <h3>Enquiry Form</h3>
+      <form onsubmit="sendWhatsApp(event)">
+        <input id="name" required placeholder="आपका नाम">
+        <input id="phone" required type="tel" placeholder="मोबाइल नंबर">
+        <select id="course" required>
+          <option value="">कोर्स चुनें</option>
+          <option>DCA</option><option>Special Tally GST</option><option>NTT</option>
+          <option>ECCE</option><option>Yoga Teacher Training</option><option>Fireman</option>
+          <option>Librarian</option><option>B.Lib.</option><option>Skill India / NSDC / NSQF</option>
+        </select>
+        <input id="city" placeholder="शहर">
+        <textarea id="message" placeholder="आप क्या जानकारी चाहते हैं?"></textarea>
+        <button class="btn" type="submit">WhatsApp पर Enquiry भेजें</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-title">Click On Mind Academy</div>
+  <div>A Way of Success</div>
+  <p>📍 2, opposite Jaat Dharmashala, Sirsa, Haryana 125055</p>
+  <p>📞 70827-91597 &nbsp; | &nbsp; 70827-91598</p>
+  <p>© 2026 Click On Mind Academy. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const phone=document.getElementById('phone').value;
+  const course=document.getElementById('course').value;
+  const city=document.getElementById('city').value;
+  const message=document.getElementById('message').value;
+  const text=`नमस्ते Click On Mind Academy,%0A%0Aनाम: ${encodeURIComponent(name)}%0Aमोबाइल: ${encodeURIComponent(phone)}%0Aकोर्स: ${encodeURIComponent(course)}%0Aशहर: ${encodeURIComponent(city)}%0Aसंदेश: ${encodeURIComponent(message)}`;
+  window.open(`https://wa.me/917082791597?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
